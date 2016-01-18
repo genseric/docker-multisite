@@ -14,6 +14,7 @@ docker run --name ng1 -it -d -p 80:80 -v /root/docker/base/conf/sites-enabled:/e
 docker run --name ng2 -d -p 83:80 baseng
 docker run --name ng3 -d -p 84:80 baseng
 - change the content of the index files on hosts, 
+
 docker exec -it ng2 /bin/bashdocker exec -it ng2 /bin/bash
 under the instance make the changes
 vi /var/www/html/index.nginx-debian.html
